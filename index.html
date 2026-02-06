@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>தாய்த்தமிழ் மழலையர் மற்றும் தொடக்கப் பள்ளி | 2008–2014</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body{
+      margin:0;
+      font-family:'Noto Serif Tamil', serif;
+      background:#f7f2e7;
+      color:#3b2f2f;
+    }
+    header{
+      background:#2f4f4f;
+      color:#fff;
+      padding:60px 20px;
+      text-align:center;
+    }
+    header h1{font-size:2.2rem;margin-bottom:10px;}
+    header p{font-size:1.1rem;opacity:.9}
+
+    section{padding:50px 20px;max-width:1100px;margin:auto;}
+    .section-title{
+      font-size:1.8rem;
+      border-bottom:3px solid #d2b48c;
+      display:inline-block;
+      margin-bottom:30px;
+    }
+
+    .memory-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+    .photo{
+      background:#fff;
+      padding:10px;
+      box-shadow:0 5px 15px rgba(0,0,0,.15);
+      transform:rotate(-1deg);
+    }
+    .photo img{width:100%;display:block}
+
+    .register{
+      background:#fffbe6;
+      padding:30px;
+      border:2px dashed #c2a86d;
+    }
+    .register li{margin:10px 0}
+
+    footer{
+      background:#2f4f4f;
+      color:#fff;
+      text-align:center;
+      padding:20px;
+    }
+  
+    /* Mobile polish & smooth animations */
+    *{box-sizing:border-box}
+    img{max-width:100%;height:auto}
+
+    section{animation:fadeUp 0.8s ease both}
+    @keyframes fadeUp{
+      from{opacity:0;transform:translateY(30px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    .photo:hover{transform:rotate(0deg) scale(1.03);transition:0.4s}
+
+    @media(max-width:600px){
+      header{padding:40px 15px}
+      header h1{font-size:2rem}
+      .section-title{font-size:1.5rem}
+    }
+  </style>
+</head>
+<body>
+<audio id="bell" src="bell.mp3"></audio>
+<audio id="bgm" src="bgm.mp3" loop></audio>
+
+<header onclick="startAudio()">
+  <img src="school-name-header.jpg" alt="தாய்த்தமிழ் மழலையர் மற்றும் தொடக்கப் பள்ளி" style="max-width:320px;width:90%;margin-bottom:20px;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,0.35);">
+  <h1 style="font-size:2.6rem;">அந்த நாள்கள்</h1>
+  <p style="font-size:1.2rem; margin-top:10px;">தாய்த்தமிழ் மழலையர் மற்றும் தொடக்கப் பள்ளி</p>
+  <p style="margin-top:5px;">2008 – 2014</p>
+  <p style="margin-top:20px; font-style:italic; font-size:1.3rem;">“Uniform மாறினாலும்… நட்பு மாறல.”</p>
+  <small style="display:block;margin-top:25px;opacity:0.85;">🔔 கிளிக் செய்யுங்கள் – அந்த நாள்களுக்குள் செல்ல</small>
+</header>
+
+<script>
+function startAudio(){
+  const bell = document.getElementById('bell');
+  const bgm = document.getElementById('bgm');
+  if(bell) bell.play();
+  if(bgm){ bgm.volume = 0.3; bgm.play(); }
+}
+</script>
+
+<script>
+function startAudio(){
+  document.getElementById('bell').play();
+  const bgm = document.getElementById('bgm');
+  bgm.volume = 0.3;
+  bgm.play();
+}
+</script>
+
+<section>
+  <div class="section-title">📸 அப்போது – இப்போது</div>
+  <p style="font-size:1.1rem;">முகம் மாறினாலும்… நினைவுகள் மாறல 🥹</p>
+
+  <div class="compare-box">
+    <div class="compare-img">
+      <h3>👶 அப்போது</h3>
+      <input type="file" accept="image/*" onchange="loadImage(event,'thenImg')">
+      <img id="thenImg" />
+      <p>"Bag பெரியது… கவலை சின்னது"</p>
+    </div>
+
+    <div class="compare-img">
+      <h3>🧑 இப்போது</h3>
+      <input type="file" accept="image/*" onchange="loadImage(event,'nowImg')">
+      <img id="nowImg" />
+      <p>"Responsibility பெரியது… நினைவுகள் அதைவிட பெரியது"</p>
+    </div>
+  </div>
+</section>
+
+<style>
+.compare-box{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+  margin-top:30px;
+}
+.compare-img{
+  background:#fff;
+  padding:20px;
+  text-align:center;
+  box-shadow:0 6px 18px rgba(0,0,0,0.15);
+  transform:rotate(-1deg);
+}
+.compare-img img{
+  width:100%;
+  margin-top:10px;
+  border:6px solid #f7f2e7;
+}
+</style>
+
+<script>
+function loadImage(event,id){
+  const img = document.getElementById(id);
+  img.src = URL.createObjectURL(event.target.files[0]);
+}
+</script>
+
+<script>
+function loadImage(event,id){
+  const img = document.getElementById(id);
+  img.src = URL.createObjectURL(event.target.files[0]);
+}
+</script>
+
+<section>
+  <div class="section-title">📒 வருகைப் பதிவேடு</div>
+  <ul class="register">
+    <li>✔️ மணி – எப்போதும் சிரிப்பு</li>
+    <li>✔️ ராஜா – கடைசி பெஞ்ச்</li>
+    <li>✔️ லதா – ஆசிரியை செல்லம்</li>
+  </ul>
+</section>
+
+<section>
+  <div class="section-title">📝 நினைவுச் செய்தி (ஆட்டோகிராப் புத்தகம்)</div>
+  <p>"அந்தச் சின்ன வகுப்பறைகள், இன்று பெரிய கனவுகளாக மாறிவிட்டன."</p>
+
+  <form id="messageForm" style="margin-top:20px;">
+    <input type="text" id="name" placeholder="உங்கள் பெயர்" required style="width:100%;padding:10px;margin-bottom:10px;font-family:inherit;">
+    <textarea id="message" placeholder="உங்கள் நினைவுச் செய்தி எழுதுங்கள்…" required style="width:100%;padding:10px;height:100px;font-family:inherit;"></textarea>
+    <button type="submit" style="margin-top:10px;padding:10px 20px;background:#2f4f4f;color:#fff;border:none;cursor:pointer;">சேர்க்கவும்</button>
+  </form>
+
+  <div id="messages" style="margin-top:30px;"></div>
+</section>
+
+<script>
+  const form = document.getElementById('messageForm');
+  const messagesDiv = document.getElementById('messages');
+
+  function loadMessages() {
+    const saved = JSON.parse(localStorage.getItem('schoolMessages')) || [];
+    messagesDiv.innerHTML = saved.map(m => `<div style="background:#fffbe6;padding:15px;margin-bottom:10px;border-left:4px solid #c2a86d;"><strong>${m.name}</strong><br>${m.text}</div>`).join('');
+  }
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const text = document.getElementById('message').value;
+    const saved = JSON.parse(localStorage.getItem('schoolMessages')) || [];
+    saved.push({ name, text });
+    localStorage.setItem('schoolMessages', JSON.stringify(saved));
+    form.reset();
+    loadMessages();
+  });
+
+  loadMessages();
+</script>
+
+<section>
+  <div class="section-title">📷 Class Photo Gallery</div>
+  <p>பழைய புகைப்படங்கள்… இதயத்தில் பதிந்த தருணங்கள் 🥹</p>
+
+  <div class="memory-grid">
+    <div class="photo"><img src="class1.jpg" alt="Class Photo"></div>
+    <div class="photo"><img src="class2.jpg" alt="School Memory"></div>
+    <div class="photo"><img src="class3.jpg" alt="Friends"></div>
+  </div>
+
+  <p style="margin-top:20px;font-style:italic;">"இந்த படங்கள் பேசும்… வார்த்தைகள் தேவையில்லை."</p>
+</section>
+
+<section>
+  <div class="section-title">🙏 ஆசிரியர் நினைவுகள்</div>
+  <p>எங்களை உருவாக்கிய தெய்வங்கள் 💐</p>
+
+  <div class="register">
+    <p><strong>🌼 தலைமை ஆசிரியர்:</strong> உங்கள் வழிகாட்டுதல் இன்றும் எங்களோடு.</p>
+    <p><strong>🌼 ஆசிரியை:</strong> அன்பும், பொறுமையும் கற்றுத் தந்ததற்கு நன்றி.</p>
+    <p style="margin-top:15px;font-style:italic;">"எழுத்தறிவைத் தந்த கைகள்… வாழ்க்கையை வடிவமைத்தன."</p>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">🎉 Fun Corner</div>
+  <p>பள்ளி நாட்களின் சிரிப்புகள் 😄</p>
+
+  <div class="register">
+    <p>🏆 Class topper யார்?</p>
+    <p>😂 PT period hero யார்?</p>
+    <p>😅 Master-கிட்ட அதிக scolding வாங்கினது யார்?</p>
+    <p style="margin-top:15px;font-style:italic;">"இந்த கேள்விகள்… அந்த நாட்களை மீண்டும் கொண்டு வருது!"</p>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">🎶 அந்த நாள் இசை</div>
+  <p>இந்த இசை… அந்த நாட்களுக்கு அழைக்குது…</p>
+  <button onclick="toggleMusic()" style="padding:12px 25px;background:#2f4f4f;color:#fff;border:none;cursor:pointer;">இசை ON / OFF</button>
+</section>
+
+<script>
+function toggleMusic(){
+  const bgm = document.getElementById('bgm');
+  if(bgm.paused){ bgm.play(); }
+  else{ bgm.pause(); }
+}
+</script>
+
+<footer>
+  <p>© 2008–2014 | Class Reunion | Made with ❤️ & Tamil Memories</p>
+</footer>
+
+</body>
+</html>
